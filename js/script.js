@@ -17,8 +17,7 @@ function calculate() {
     document.getElementById("triangleType").innerHTML =
       "Please enter valid numbers"
     return
-  }
-
+  }  b
   // using the cosine law
   const angleA = Math.acos(
     (lengthB ** 2 + lengthC ** 2 - lengthA ** 2) / (2 * lengthB * lengthC)
