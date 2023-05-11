@@ -17,11 +17,12 @@ func classifyTriangle(a, b, c int) string {
 	}
 
 	// Process
-	if a == b && b == c {
+	switch {
+	case a == b && b == c:
 		return "The triangle is equilateral"
-	} else if a == b || b == c || c == a {
+	case a == b || b == c || c == a:
 		return "The triangle is isosceles"
-	} else {
+	default:
 		return "The triangle is scalene"
 	}
 }
@@ -43,4 +44,3 @@ func main() {
 	classification := classifyTriangle(a, b, c)
 	fmt.Println(classification)
 }
-
