@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
-    <title>Area of a triangle with JS</title>
+    <title>Triangle type with JS</title>
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -31,7 +31,7 @@
             src="https://code.getmdl.io/1.3.0/material.min.js"
           ></script>
           <script src="./js/script.js"></script>
-          <span class="mdl-layout-title">Area of a triangle with JS</span>
+          <span class="mdl-layout-title">Triangle type with JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -43,9 +43,9 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="angle1"
+              id="lengthA"
             />
-            <label class="mdl-textfield__label" for="angle1">base ...</label>
+            <label class="mdl-textfield__label" for="lengthA">lengthA...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
@@ -57,19 +57,19 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="angle2"
+              id="lengthB"
             />
-            <label class="mdl-textfield__label" for="angle2">height...</label>
+            <label class="mdl-textfield__label" for="lengthB">lengthB...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <form action="#">
           <p>angle 3 </p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="angle3" />
-            <label class="mdl-textfield__label" for="height">height...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lengthC" />
+            <label class="mdl-textfield__label" for="height">lengthC...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
+          </div> 
         </form>
         <br />
         <!-- Raised button with ripple -->
@@ -79,7 +79,7 @@
         >
           Calculate
         </button>
-        <div id="triangleType">
+        <div id="answer">
           <br />
         </div>
         <div id="fanta-bottle">
